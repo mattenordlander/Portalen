@@ -332,10 +332,11 @@ justify-content: space-around;
 .jewelry14-child,
 .jewelry15-child{
 height: 70%;
-width: 70%;
-background-size: 310px 300px;
+width: 65%;
+background-size: 335px 300px;
 background-repeat: no-repeat;
 box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.58);
+background-position: center;
 }
 
 .jewelry1-child{
