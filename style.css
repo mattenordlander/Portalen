@@ -7,7 +7,6 @@ html{
     box-sizing: border-box;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -16,11 +15,18 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    height: 70px;
     font-family: 'Lobster Two', cursive, sans-serif;
     background:#293239;
     width: 100%;
     position: fixed;
+    z-index: 100;
+   }
+
+nav.scroll{
+    
+    opacity: 0.5;
+    transition:1.0s;
 }
 
 .logo {
@@ -93,9 +99,7 @@ nav {
 /************  MAIN  *****************/
 
 
-main{
-    padding-top: 8vh;
-}
+
 
 .home-main {
     min-height: 100vh;
@@ -109,7 +113,7 @@ main{
 .home-main-head {
     font-family:'Lobster Two', cursive, sans-serif;
     color: #FFEFD5;
-    padding: 5% 0% 5% 8%;
+    padding: 15% 0% 2% 8%;
     font-size: 3em;
     letter-spacing: 2px;
     font-weight: normal;
@@ -264,9 +268,9 @@ main{
 .product-header{
     color: #FFEFD5;
     font-family: 'Lobster Two', cursive, sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 10%;
     letter-spacing: 2px;
     font-weight: normal;
     text-shadow: 3px 2px 3px rgba(255,255,255,.2), 4px 4px 6px rgba(0,0,0,0.57);
@@ -275,8 +279,9 @@ main{
     color:  #FFEFD5;
     text-align: center;
     padding: 5% 20% 5% 20%;
-    line-height: 30px;
+    line-height: 40px;
     font-family: 'source Sans Pro', sans-serif;
+    font-size: 1.5em;
 
 }
 
@@ -347,7 +352,7 @@ background-image:url(./images/Produkter/IMG_20200331_205215_01.jpg);
 }
 .jewelry3-child{
 background-image: url(./images/Produkter/IMG_20200331_205353_01.jpg);
-background-position: 0% 70%;
+background-position: center;
 }
 .jewelry4-child{
     background-image: url(./images/Produkter/IMG_20200331_205932_01.jpg);   
@@ -403,7 +408,7 @@ background-position: 0% 70%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
-    min-height: 100vh;
+    height: 100vh;
 }
 strong{
 font-weight: normal;
@@ -413,6 +418,16 @@ font-weight: normal;
 .workshop-main-content{
     text-align: center;
 }
+
+.workshop-main-header{
+    font-size: 4em;
+    padding: 30% 0% 5% 0%;
+    font-family: 'Lobster Two', sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: normal;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 4px 4px 6px rgba(0,0,0,0.57);
+}
+
 .workshop-main-content{
     padding: 0% 35% 0% 35%;
     color:#FFEFD5;
@@ -421,14 +436,6 @@ font-weight: normal;
     
 }
 
-.workshop-main-header{
-    font-size: 4em;
-    padding:40px 0px 60px 0px;
-    font-family: 'Lobster Two', sans-serif;
-    letter-spacing: 2.5px;
-    font-weight: normal;
-    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 4px 4px 6px rgba(0,0,0,0.57);
-}
 .workshop-main-list{
     display: block;
 }
@@ -465,7 +472,7 @@ font-weight: normal;
 .booking-btn-child:hover{
     color:#293239;
     background: #FFEFD5; 
-    transition: 0.3s;
+    transition: 0.5s;
     
  } 
 
@@ -499,7 +506,6 @@ footer{
     font-family: 'Lobster Two', cursive, sans-serif;
     font-size: 1.5em; 
     margin-right: 15px;
-    line-height: 20px;
 }
 .footer-text{
     border-right: none;
@@ -523,6 +529,9 @@ footer{
 
 
 /**********  FOR MOBILE****************/
+
+
+
 @media screen and (max-width:1128px){
     .nav-links {
         width: 33%;
@@ -564,31 +573,106 @@ footer{
     }
 
     
-
-    /*.social-media a {
-        opacity: 0;
-    }*/
-
-    .nav-links li {
-        /*opacity: 0;*/
-    }
     .burger{
         display: block;
         cursor: pointer;
     }
 }
 
-    .nav-active{
-        transform: translateX(0%);
+.nav-active{
+    transform: translateX(0%);
+}
+@media screen and (min-width:750px){
+    .no-webb{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    
+    .nav-links{
+        height: 30vh;
+    }
+    
+    .logo {
+        color:#FFEFD5;
+        letter-spacing: 3px;
+        font-size: 1.5em; 
+        }
+
+
+           .home-main {
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.589) 100%, rgba(0, 0, 0, 0.589) 100%), url(./images/Produkter/IMG_20200331_205620_01.jpg);
+            background-size: cover;
+            
+
+        }
+
+      .home-main-head{
+          padding-top: 40%;
+          font-size: 2em;
+      }
+
+      .home-main-text{
+        font-size: 1.3em;
+        padding:10% 5% 0% 5%;
+        font-weight: bolder;
+      }
+      
+    /**********FOOTER*************/
+
+    .no-mobile{
+        display: none;
     }
 
-    @keyframes navLinkFade {
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0px);
-        }
+    .footer-mobile {
+     height: 20vh;
     }
+       
+    .footer-container{
+    display: block; float: left;
+    align-items:flex-start;
+    
+       
+    }
+
+    .footer-logo{
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        border: none;
+        margin-left: 5%;
+    }
+ 
+
+
+    .footer-address{
+        font-size: 1.2em;
+        margin:5% 5% 0% 5%;
+        border: none;
+    
+    }
+    .social-media-mobile{
+      height: 10vh;
+      background: #181e22;
+   
+    }
+    .social-media-list-mobile{
+     width: 100%;
+     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+   
+
+    .fa-facebook,
+    .fa-instagram,
+    .fa-envelope {
+    color: #FFEFD5;
+    font-size: 2.3em;
+   
+    }
+    
+}
