@@ -7,5 +7,15 @@
     });
 
 } 
-
 navSlide();
+
+const header = document.querySelector('nav');
+
+window.onscroll = function() {
+    const top = window.scrollY;
+    if (top >= 150){
+        header.classList.add('scroll')
+    } else {
+        header.classList.remove('scroll');
+    }
+}
