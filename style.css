@@ -336,66 +336,65 @@ justify-content: space-around;
 .jewelry13-child,
 .jewelry14-child,
 .jewelry15-child{
-height: 70%;
-width: 65%;
-background-size: 335px 300px;
+height: 300px;
+width: 450px;
 background-repeat: no-repeat;
 box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.58);
-background-position: center;
+background-position:center;
+background-size:cover;
 }
 
 .jewelry1-child{
-background-image: url(./images/Produkter/IMG_20200331_205118_01.jpg);
+background-image: url(./images/Produkter/ProdukterNy/1spjuthalsaband\ PS.jpg);
 }
 .jewelry2-child{
-background-image:url(./images/Produkter/IMG_20200331_205215_01.jpg);
+background-image: url(./images/Produkter/ProdukterNy/2månhalsband\ 3000x3000.jpg);
 }
+
 .jewelry3-child{
-background-image: url(./images/Produkter/IMG_20200331_205353_01.jpg);
-background-position: center;
+background-image:url(./images/Produkter/ProdukterNy/stenhalsband_4500x3000.jpg);
+
 }
 .jewelry4-child{
-    background-image: url(./images/Produkter/IMG_20200331_205932_01.jpg);   
+    background-image: url(./images/Produkter/ProdukterNy/4hornhalsband.jpg);   
 }
 .jewelry5-child{
-    background-image: url(./images/Produkter/IMG_20200331_205540_01.jpg);
-    background-position: 0% 70%;
+    background-image: url(./images/Produkter/ProdukterNy/5krossadstenhalsband.jpg);
+    
 }
 .jewelry6-child{
-    background-image: url(./images/Produkter/IMG_20200331_205552_01.jpg);
-    background-position: 0% 70%;
+    background-image: url(./images/Produkter/ProdukterNy/6dörmfångarörhängen.jpg);
+    
 }
 .jewelry7-child{
-    background-image: url(./images/Produkter/IMG_20200331_205620_01.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/7stenguldhalsband.jpg);
 }
 .jewelry8-child{
-    background-image: url(./images/Produkter/IMG_20200331_205727_01.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/8svartläderarmband.jpg);
 }
 .jewelry9-child{
-    background-image: url(./images/Produkter/IMG_20200331_205806_01.jpg);
-    background-position: 0% 70%;
+    background-image: url(./images/Produkter/ProdukterNy/9bruntläderarmband.jpg);
+    
 }
 .jewelry10-child{
-    background-image: url(./images/Produkter/IMG_20200331_205339_01.jpg);
-    background-position: 0% 65%;
-    background-size: 330px 260px;
+    background-image: url(./images/Produkter/ProdukterNy/10blåring.jpg);
+   
 }
 .jewelry11-child{
-    background-image: url(./images/Produkter/IMG_20200331_205409_01.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/11vitring.jpg);
 }
 .jewelry12-child{
-    background-image: url(./images/Produkter/IMG_20200331_205500_01.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/12lilahalsband3.jpg)
 }
 .jewelry13-child{
-    background-image: url(./images/Produkter/IMG_20200331_205525_01.jpg);
-    background-position: 0% 65%;
-    background-size: 330px 230px;
+    background-image: url(./images/Produkter/ProdukterNy/svartareläderpåse_4098x3000.jpg);
+   
 }
 .jewelry14-child{
-    background-image: url(./images/Produkter/IMG_20200331_205816_01.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/färgad_läderpåsa_3875x3000.jpg);
 }
 .jewelry15-child{
-    background-image: url(./images/Produkter/IMG_20200331_205833_01.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/15Älghalsband.jpg);
 }
 
 
@@ -404,7 +403,7 @@ background-position: center;
 /**********************WORKSHOP*****************/
 
 .workshop-main{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.659) 50%, rgba(62, 44, 17, 0.646) ),url(./images/Workshop-background.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.659) 50%, rgba(62, 44, 17, 0.646) ),url(./images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -475,6 +474,19 @@ font-weight: normal;
     transition: 0.5s;
     
  } 
+ .creditCopyText{
+    color: #ffefd55b;
+    margin: 3% 0% 0% 1%;
+ }
+
+ .creditCopyText a{
+     color: #ffefd55b;
+ }
+ .creditCopyText a:hover{
+     color: #ffefd5a9;
+     transition: 0.5s;
+ }
+
 
 /****************FOOTER***************/
 
@@ -582,7 +594,7 @@ footer{
 .nav-active{
     transform: translateX(0%);
 }
-@media screen and (min-width:750px){
+@media screen and (min-width:450px){
     .no-webb{
         display: none;
     }
@@ -602,9 +614,9 @@ footer{
         }
 
 
-           .home-main {
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.589) 100%, rgba(0, 0, 0, 0.589) 100%), url(./images/Produkter/IMG_20200331_205620_01.jpg);
-            background-size: cover;
+    .home-main {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.589) 100%, rgba(0, 0, 0, 0.589) 100%), url(./images/Produkter/IMG_20200331_205620_01.jpg);
+    background-size: cover;
             
 
         }
@@ -658,11 +670,11 @@ footer{
    
     }
     .social-media-list-mobile{
-     width: 100%;
-     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
    
