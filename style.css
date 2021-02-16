@@ -140,14 +140,15 @@ nav.scroll{
 
 .workstore-main-container{
     display:block;
-    padding:7% 50% 20% 5%;
+    /*padding:7% 50% 20% 5%;*/
+    padding: 10% 50% 20% 5%;
 }
 
 .workstore-main-child{
    
     color: #FFEFD5;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.5;
     font-family: 'source Sans Pro', sans-serif;
     font-size: 1.3em;
     
@@ -167,15 +168,18 @@ nav.scroll{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "block1 block2";
-}
-.block1,
-.block2{
+    background-color:#293239;
     border-top: 2px solid #FFEFD5;
 }
 
+
 .block1{
+    display: block;
     background-color:#293239 ;
-    text-align: center;  
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+    margin: auto;
     
 }
 .block1-item-title{
@@ -194,6 +198,9 @@ nav.scroll{
     font-size: 1.3em;
     line-height: 30px;
 }
+
+
+
 .arrow {
     padding-top: 25px;
     font-size: 40px;
@@ -254,9 +261,10 @@ nav.scroll{
 .materals{
     list-style-type: none;
     color: #FFEFD5;
-    font-family:'source Sans Pro', sans-serif;
+    font-family:'Lobster Two', cursive, sans-serif;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 4px 4px 6px rgba(0,0,0,0.57);
     font-size: 2.5em;
-    letter-spacing: 1px;
+    letter-spacing: 2.3px;
 }
 /****************PRODUKTER**********************/
 
@@ -345,10 +353,10 @@ background-size:cover;
 }
 
 .jewelry1-child{
-background-image: url(./images/Produkter/ProdukterNy/1spjuthalsaband\ PS.jpg);
+background-image: url(./images/Produkter/ProdukterNy/spjuthalsaband_4500x3000.jpg);
 }
 .jewelry2-child{
-background-image: url(./images/Produkter/ProdukterNy/2månhalsband\ 3000x3000.jpg);
+background-image: url(./images/Produkter/ProdukterNy/månhalsband_3990x3000.jpg);
 }
 
 .jewelry3-child{
@@ -387,14 +395,14 @@ background-image:url(./images/Produkter/ProdukterNy/stenhalsband_4500x3000.jpg);
     background-image: url(./images/Produkter/ProdukterNy/12lilahalsband3.jpg)
 }
 .jewelry13-child{
-    background-image: url(./images/Produkter/ProdukterNy/svartareläderpåse_4098x3000.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/svartareläderpåse_5246X3630.jpg);
    
 }
 .jewelry14-child{
     background-image: url(./images/Produkter/ProdukterNy/färgad_läderpåsa_3875x3000.jpg);
 }
 .jewelry15-child{
-    background-image: url(./images/Produkter/ProdukterNy/15Älghalsband.jpg);
+    background-image: url(./images/Produkter/ProdukterNy/ölghalsband\ kollage_2.jpg);
 }
 
 
@@ -407,7 +415,7 @@ background-image:url(./images/Produkter/ProdukterNy/stenhalsband_4500x3000.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
-    height: 100vh;
+    min-height: 100vh;
 }
 strong{
 font-weight: normal;
@@ -477,6 +485,8 @@ font-weight: normal;
  .creditCopyText{
     color: #ffefd55b;
     margin: 3% 0% 0% 1%;
+    font-size: 0.8em;
+    padding-bottom: 0.5%;
  }
 
  .creditCopyText a{
@@ -550,7 +560,7 @@ footer{
     }
 }    
 
-@media screen and (max-width:865px){
+@media screen and (max-width:950px){
 
     body{
         /*overflow-x:hidden;*/
@@ -594,14 +604,14 @@ footer{
 .nav-active{
     transform: translateX(0%);
 }
-@media screen and (min-width:450px){
+@media screen and (min-width:900px){
     .no-webb{
         display: none;
     }
 }
 
 
-@media screen and (max-width:450px){
+@media screen and (max-width:900px){
     
     .nav-links{
         height: 30vh;
